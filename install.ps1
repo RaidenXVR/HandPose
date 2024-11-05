@@ -8,4 +8,4 @@ Set-Location ./hand_pose_react
 
 npm install
 
-deactivate.ps1
+deactivate
