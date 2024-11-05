@@ -1,0 +1,232 @@
+{
+    "thumbs_up": {
+        "output": "yes",
+        "thumb": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "index": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "left"
+        }
+    },
+    "thumbs_down": {
+        "output": "no",
+        "thumb": {
+            "curled": "full",
+            "direction": "down"
+        },
+        "index": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "left"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "left"
+        }
+    },
+    "okay": {
+        "output": "okay",
+        "thumb": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "left"
+        },
+        "middle": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "ring": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "pinky": {
+            "curled": "full",
+            "direction": "up"
+        }
+    },
+    "one": {
+        "output": 1,
+        "thumb": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "two": {
+        "output": 2,
+        "thumb": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "three": {
+        "output": 3,
+        "thumb": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "ring": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "four": {
+        "output": 4,
+        "thumb": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "ring": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "pinky": {
+            "curled": "full",
+            "direction": "up"
+        }
+    },
+    "five": {
+        "output": 5,
+        "thumb": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "ring": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "pinky": {
+            "curled": "full",
+            "direction": "up"
+        }
+    },
+    "next": {
+        "output": "next",
+        "thumb": {
+            "curled": "full",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "right"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "back": {
+        "output": "back",
+        "thumb": {
+            "curled": "full",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "left"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    }
+}

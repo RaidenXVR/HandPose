@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+hand_pose_react/node_modules
+hand_pose_react/.pnp
+hand_pose_react/pnp.js
+
+# testing
+hand_pose_react/coverage
+
+# production
+hand_pose_react/build
+
+# misc
+hand_pose_react/.DS_Store
+hand_pose_react/.env.local
+hand_pose_react/.env.development.local
+hand_pose_react/.env.test.local
+hand_pose_react/.env.production.local
+
+hand_pose_react/npm-debug.log*
+hand_pose_react/yarn-debug.log*
+hand_pose_react/yarn-error.log*
+
+#Python
+venv/*
+test.py
+server-ex.py
+__pycache__
+.idea

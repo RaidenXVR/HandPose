@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Happy Meal",
+        "price": "Rp. 30.000",
+        "image": "food_images/happy-meal.png",
+        "description": "A delightful meal for kids."
+    },
+    {
+        "id": 2,
+        "name": "Big Mac",
+        "price": "Rp. 52.000",
+        "image": "food_images/bigmac.png",
+        "description": "A classic burger with two beef patties."
+    },
+    {
+        "id": 3,
+        "name": "Slider Beef Burger",
+        "price": "Rp. 38.000",
+        "image": "food_images/slider.png",
+        "description": "A small beef burger, perfect for a quick bite."
+    },
+    {
+        "id": 4,
+        "name": "Chicken Nuggets",
+        "price": "Rp. 35.000",
+        "image": "food_images/nuggies.png",
+        "description": "Crispy chicken nuggets for snack time."
+    },
+    {
+        "id": 5,
+        "name": "Chicken Sandwich",
+        "price": "Rp. 30.000",
+        "image": "food_images/chicken-sandwich.png",
+        "description": "A delicious chicken sandwich with fresh ingredients."
+    }
+]
