@@ -8,4 +8,6 @@ Set-Location ./hand_pose_react
 
 npm install
 
+Set-Location ..
+
 deactivate
