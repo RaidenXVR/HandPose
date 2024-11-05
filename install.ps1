@@ -4,6 +4,6 @@ python -m venv venv
 
 pip install -r requirements.txt
 
-Set-Location /hand_pose_react
+Set-Location ./hand_pose_react
 
 npm install
