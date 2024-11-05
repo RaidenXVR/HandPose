@@ -22,3 +22,5 @@ Start-Process python -Wait -ArgumentList "detection.py"
 Write-Host "Turning off servers..."
 stop-job $server_pid
 stop-job $react_pid
+
+deactivate.ps1

@@ -7,3 +7,5 @@ pip install -r requirements.txt
 Set-Location ./hand_pose_react
 
 npm install
+
+deactivate.ps1
