@@ -22,10 +22,9 @@ function CheckPose() {
         // Fetch data initially
         fetchData();
 
-        // Set up polling every 5 seconds
         const interval = setInterval(() => {
             fetchData();
-        }, 1500); // Adjust the interval as needed
+        }, 800); // Adjust the interval as needed
 
         // Cleanup interval on component unmount
         return () => clearInterval(interval);

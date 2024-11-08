@@ -4,22 +4,41 @@ import mediapipe as mp
 import threading
 import time
 from Functions import check_hand_landmarks
+import json
+from classes import Pose
+import httpx
+import asyncio
+
+# Function to check hand landmarks and update every half seconds
 
 
-# Function to check hand landmarks and update every 2 seconds
-def update_landmarks():
+async def update_landmarks():
     global result
     res = {}
-    while True:
-        if result is not None:
-            res = check_hand_landmarks(result[0])
-            # print(res)
+    async with httpx.AsyncClient() as client:
+        while True:
+            if result is not None:
+                _res = check_hand_landmarks(result[0])
+                # print(res)
+                processed_data = [pose.output
+                                  for pose in poses if pose.check_pose_equal(_res)]
+                # print(processed_data)
+                if processed_data:
+                    res = {"output": processed_data[0]}
+                else:
+                    res = {}
 
-        else:
-            res = {}
-        response = requests.post("http://localhost:8000/data", json=res)
-        print(response.text)
-        time.sleep(0.8)  # Update every second
+            else:
+                res = {}
+            # start_time = time.time()
+            try:
+                response = await client.post("http://localhost:8000/data", json=res)
+                # print(response.text)
+            except httpx.RequestError as e:
+                print(f"An error occurred: {e}")
+            print(response.text)
+            # print("Request duration:", time.time() - start_time)
+            time.sleep(0.5)  # Update every half second
 
 
 def _start_detection():
@@ -63,9 +82,18 @@ def _start_detection():
 
 # def start_daemon():
 
+def _update_landmarks():
+    asyncio.run(update_landmarks())
+
 
 if __name__ == "__main__":
     # def start_daemon():
+    with open('poses.json', "r", encoding='utf-8') as p:
+        poses_json = json.load(p)
+
+    poses: list[Pose] = [Pose(pose_item["output"], pose_item["thumb"], pose_item["index"],
+                              pose_item["middle"], pose_item["ring"], pose_item["pinky"]) for pose_item in [poses_json[pose]
+                                                                                                            for pose in poses_json]]
     mp_drawing = mp.solutions.drawing_utils
     mp_hands = mp.solutions.hands
 
@@ -75,7 +103,7 @@ if __name__ == "__main__":
     left_or_right = None
 
     detection_thread = threading.Thread(target=_start_detection)
-    landmark_thread = threading.Thread(target=update_landmarks)
+    landmark_thread = threading.Thread(target=_update_landmarks)
 
     detection_thread.daemon = True
     landmark_thread.daemon = True  # Daemon thread will exit when the main thread exits
