@@ -74,8 +74,8 @@ class Pose:
     ring: Finger
     pinky: Finger
 
-    def __init__(self, pose_name: str, output: str, thumb: dict, index: dict, middle: dict, ring: dict, pinky: dict):
-        self.pose_name = pose_name
+    def __init__(self, output: str, thumb: dict, index: dict, middle: dict, ring: dict, pinky: dict):
+        # self.pose_name = pose_name
         self.output = output
 
         thumb_finger = Finger(Finger.FingerEnum.THUMB, thumb.get(
