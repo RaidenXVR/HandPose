@@ -22,21 +22,18 @@ Sebelum memulai, pastikan NPM dan Python 3.11 terinstall, kemudian install depen
 * Install NPM (Jika Belum)
 * Install Python 3.11 (Jika Belum)
 * Clone repository ini.
-* Jalankan install.ps1 menggunakan PowerShell
+* Jalankan install.ps1 menggunakan PowerShell (`powershell -ExecutionPolicy ByPass -File ./install.ps1`)
 
 ### Executing program
 
 * Buka Terminal PowerShell
 * Buka direktori tempat repository di clone (Menggunakan cd)
 * Ketik `./start.ps1` dan tekan enter.
+* Jika terjadi error ExecutionPolicy, jalankan dengan `powershell -ExecutionPolicy ByPass -File ./start.ps1`
 * Untuk menghentikan Program, buka webcam yang muncul dan tekan `q`, maka program akan berhenti.
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
