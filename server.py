@@ -19,6 +19,8 @@ processed_datas = {}
 
 origins = [
     "http://localhost:3000",  # React app URL
+    "http://localhost:3001",
+    "http://localhost:3002"
     # You can add more origins if needed
 ]
 
