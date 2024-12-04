@@ -66,7 +66,6 @@ class Finger:
 
 
 class Pose:
-    pose_name: str
     output: str
     thumb: Finger
     index: Finger

@@ -49,7 +49,7 @@
         "output": "okay",
         "thumb": {
             "curled": "full",
-            "direction": "up"
+            "direction": "left"
         },
         "index": {
             "curled": "full",
@@ -227,6 +227,75 @@
         "pinky": {
             "curled": "curled",
             "direction": "any"
+        }
+    },
+    "up": {
+        "output": "up",
+        "thumb": {
+            "curled": "full",
+            "direction": "left"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "up"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "down": {
+        "output": "down",
+        "thumb": {
+            "curled": "full",
+            "direction": "left"
+        },
+        "index": {
+            "curled": "full",
+            "direction": "down"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "any"
+        }
+    },
+    "fist": {
+        "output": "fist",
+        "thumb": {
+            "curled": "curled",
+            "direction": "any"
+        },
+        "index": {
+            "curled": "curled",
+            "direction": "down"
+        },
+        "middle": {
+            "curled": "curled",
+            "direction": "down"
+        },
+        "ring": {
+            "curled": "curled",
+            "direction": "down"
+        },
+        "pinky": {
+            "curled": "curled",
+            "direction": "down"
         }
     }
 }

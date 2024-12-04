@@ -1,0 +1,35 @@
+<div class="menu">
+    <button class="nav-button" id="prev">&lt;
+        <div class="finger-icon prev-icon">
+            <img src="/images/gun-finger.png" alt="next"></img>
+        </div>
+    </button>
+
+    
+    <div class="menu-items">
+        <div class="menu-item">
+            <div class="finger-icon one-icon">
+                <img src="/images/1.png" alt="1"></img>
+            </div>
+            <img src="images/food.png" alt="GMBR 1"></img>
+                <h4>Makanan 1</h4>
+                <h5>Harga Makanan</h5>
+        </div>
+
+    </div>
+    <button class="nav-button" id="next">&gt;
+        <div class="finger-icon next-icon">
+            <img src="/images/gun-finger.png" alt="next"></img>
+        </div>
+    </button>
+</div>
+
+<div className="menu-items">
+    {visibleItems.map(item => (
+        <div className="item" key={item.id} onClick={() => item_clicked(item)}>
+            <img src={item.image} alt={item.name} />
+            <p>{item.name}</p>
+            <p>{item.price}</p>
+        </div>
+    ))}
+</div>

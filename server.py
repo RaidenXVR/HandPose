@@ -6,12 +6,12 @@ from classes import Pose
 import logging
 from fastapi.staticfiles import StaticFiles
 
-with open('poses.json', "r", encoding='utf-8') as p:
-    poses_json = json.load(p)
+# with open('poses.json', "r", encoding='utf-8') as p:
+#     poses_json = json.load(p)
 
-poses: list[Pose] = [Pose(pose_item["output"], pose_item["thumb"], pose_item["index"],
-                          pose_item["middle"], pose_item["ring"], pose_item["pinky"]) for pose_item in [poses_json[pose]
-                                                                                                        for pose in poses_json]]
+# poses: list[Pose] = [Pose(pose_item["output"], pose_item["thumb"], pose_item["index"],
+#                           pose_item["middle"], pose_item["ring"], pose_item["pinky"]) for pose_item in [poses_json[pose]
+#                                                                                                         for pose in poses_json]]
 
 app = FastAPI()
 
@@ -40,21 +40,6 @@ async def receive_data(data: dict):
     global processed_datas
     # print(f"Poses: {poses}")
     processed_datas = data
-    # if data:
-    #     # print(f"Data: {data}")
-    #     print("data called")
-    #     processed_data = [pose.output
-    #                       for pose in poses if pose.check_pose_equal(data)]
-    #     print(processed_data)
-    #     if processed_data:
-    #         processed_datas = {"output": processed_data[0]}
-    #     else:
-    #         processed_datas = {}
-
-    #     # print(f"Processed Data: {poses[0].check_pose_equal(data), data}")
-    # else:
-    #     processed_datas = {}
-    #     # print(f"Processed Data: {processed_datas}")
 
     return JSONResponse(processed_datas)
 
