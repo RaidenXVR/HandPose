@@ -1,27 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import StaticCont from './App';
+import StaticCont from './StaticContent';
 import DynaCont from './DynaContent';
 import CheckPose from './CheckPose';
 import reportWebVitals from './reportWebVitals';
 
-const staticCont = ReactDOM.createRoot(document.getElementById('static-content'));
-staticCont.render(
-  <StaticCont />
 
-);
+// Render Static Content
+const staticCont = ReactDOM.createRoot(document.getElementById('root'));
+staticCont.render(<StaticCont />);
 
-const dynaCont = ReactDOM.createRoot(document.getElementById('dynamic-content'))
-dynaCont.render(
-  <DynaCont />
-)
+// Wait until 'main' exists in the DOM
+setTimeout(() => {
+    const mainElement = document.getElementById('main');
+    if (mainElement) {
+        const dynaCont = ReactDOM.createRoot(mainElement);
+        dynaCont.render(<DynaCont />);
+    }
+}, 0); // Delay allows React to ensure StaticCont is fully rendered
 
-const hidden = ReactDOM.createRoot(document.getElementById("hidden-func"))
-hidden.render(
-  <CheckPose />
-)
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Render Hidden Functions
+
+const hidden = ReactDOM.createRoot(document.getElementById('hidden-func'));
+hidden.render(<CheckPose />);
+
 reportWebVitals();

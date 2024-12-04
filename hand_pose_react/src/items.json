@@ -1,37 +1,466 @@
 [
     {
         "id": 1,
-        "name": "Happy Meal",
-        "price": "Rp. 30.000",
-        "image": "food_images/happy-meal.png",
-        "description": "A delightful meal for kids."
+        "name": "PaNas HeBat - Korean Soy Garlic Wings",
+        "price": 42500,
+        "image": "food_images/chicken_panas_hebat.png",
+        "description": "Paket Nasi Hemat Banget, terdapat 2 potongan sayap (wingette & drummette) dengan cita rasa renyah, gurih, dan lezat. Disajikan dengan setengah telur dadar, nasi hangat, dan small Fruit Tea lemon yang segar.",
+        "category": "ayam"
     },
     {
         "id": 2,
-        "name": "Big Mac",
-        "price": "Rp. 52.000",
-        "image": "food_images/bigmac.png",
-        "description": "A classic burger with two beef patties."
+        "name": "PaNas Special Ayam Gulai McD",
+        "price": 50000,
+        "image": "food_images/chicken_panas_special_gulai.png",
+        "description": "Paket nasi, terdiri dari 1 ayam crispy gurih, saus gulai kaya rempah, telur dadar dan Fruite Tea untuk pengalaman makan istimewa. ",
+        "category": "ayam"
     },
     {
         "id": 3,
-        "name": "Slider Beef Burger",
-        "price": "Rp. 38.000",
-        "image": "food_images/slider.png",
-        "description": "A small beef burger, perfect for a quick bite."
+        "name": "PaNas 1 Ayam Gulai McD",
+        "price": 42500,
+        "image": "food_images/chicken_panas1_gulai.png",
+        "description": "Paket Nasi, terdapat 1 ayam crispy gurih, saus gulai kaya rempah, dan Fruite Tea untuk pengalaman makan istimewa.",
+        "category": "ayam"
     },
     {
         "id": 4,
-        "name": "Chicken Nuggets",
-        "price": "Rp. 35.000",
-        "image": "food_images/nuggies.png",
-        "description": "Crispy chicken nuggets for snack time."
+        "name": "PaNas 2 Ayam Gulai McD",
+        "price": 58500,
+        "image": "food_images/chicken_panas2_gulai.png",
+        "description": "Paket Nasi, terdapat 2 potong ayam crispy gurih, saus gulai kaya rempah, dan Fruite Tea untuk pengalaman makan istimewa.",
+        "category": "ayam"
     },
     {
         "id": 5,
-        "name": "Chicken Sandwich",
-        "price": "Rp. 30.000",
-        "image": "food_images/chicken-sandwich.png",
-        "description": "A delicious chicken sandwich with fresh ingredients."
+        "name": "PaMer 5 Ayam Gulai McD",
+        "price": 151500,
+        "image": "food_images/chicken_pamer5_gulai.png",
+        "description": "Terdapat 5 potong ayam crispy gurih, saus gulai kaya rempah, 3 nasi hangat dan 3 Fruite Tea untuk pengalaman makan istimewa.",
+        "category": "ayam"
+    },
+    {
+        "id": 6,
+        "name": "PaMer 7 Ayam Gulai McD",
+        "price": 191500,
+        "image": "food_images/chicken_pamer7_gulai.png",
+        "description": "Terdapat 7 potong ayam crispy gurih, saus gulai kaya rempah, 5 nasi hangat dan 5 Fruite Tea untuk pengalaman makan istimewa.",
+        "category": "ayam"
+    },
+    {
+        "id": 7,
+        "name": "Korean Soy Garlic Wings - A la Carte 6pcs",
+        "price": 49500,
+        "image": "food_images/chicken_korea6pcs.png",
+        "description": "Nikmati menu A la Carte Korean Soy Garlic Wings. Dengan 6 potongan sayap (Wingette & Drummette) dengan cita rasa Korean Soy Garlic yang renyah, gurih, dan lezat.",
+        "category": "ayam"
+    },
+    {
+        "id": 8,
+        "name": "PaNas Wings Korean Soy Garlic",
+        "price": 45000,
+        "image": "food_images/panas_wings_Korean_Soy_Garlic.png",
+        "description": "Paket Nasi Wings dengan cita rasa Korean Soy Garlic Wings dengan 4 potongan sayap (wingette & drummette) dengan cita rasa renyah, gurih, dan lezat. Disajikan dengan Nasi Panas dan Fruit Tea Lemon Regular yang segar.",
+        "category": "ayam"
+    },
+    {
+        "id": 9,
+        "name": "Ayam Krispy McDonald`s",
+        "price": 24500,
+        "image": "food_images/chicken_crispy.png",
+        "description": "Ayam goreng khas McDonald's , dengan kulit yang renyah dan daging ayam yang lembut dan gurih. Tersedia dalam pilihan A la Carte, PaNas 1, PaNas 2, Panas 2 with Fries, PaMer 5, PaMer 7.",
+        "category": "ayam"
+    },
+    {
+        "id": 10,
+        "name": "Ayam Spicy McDonald`s",
+        "price": 24500,
+        "image": "food_images/chicken_spicy.png",
+        "description": "Ayam goreng khas McDonald's dengan bumbu pedas, rasakan sensasi pedas pada kulit yang renyah hingga daging ayam yang lembut dan gurih. Tersedia dalam pilihan A la Carte, PaNas 1, PaNas 2, Panas 2 with Fries, PaMer 5, PaMer 7.",
+        "category": "ayam"
+    },
+    {
+        "id": 11,
+        "name": "Sausage McMuffin with Egg",
+        "price": 33500,
+        "image": "food_images/sausage_muffin_egg.png",
+        "description": "Perpaduan klasik english muffin, sosis ayam khas McDonald's, telur, dan selembar keju bernutrisi.",
+        "category": "burger"
+    },
+    {
+        "id": 12,
+        "name": "Egg & Cheese Muffin",
+        "price": 30000,
+        "image": "food_images/burger_egg_cheese_muffin.png",
+        "description": "Perpaduan scrambled egg dan keju gurih dalam setangkup English Muffin hangat. ",
+        "category": "burger"
+    },
+    {
+        "id": 13,
+        "name": "Chicken Muffin",
+        "price": 29500,
+        "image": "food_images/burger_chicken_muffin.png",
+        "description": "Setangkup English Muffin hangat dilapis saus mayonais dengan daging ayam olahan yang dogoreng dengan sempurna.",
+        "category": "burger"
+    },
+    {
+        "id": 14,
+        "name": "Sausage McMuffin",
+        "price": 33000,
+        "image": "food_images/burger_sausage_muffin.png",
+        "description": "English Muffin disajikan dengan sosis ayam yang gurih dan selembar keju bernutrisi.",
+        "category": "burger"
+    },
+    {
+        "id": 15,
+        "name": "Egg McMuffin",
+        "price": 29500,
+        "image": "food_images/burger_egg_muffin.png",
+        "description": "English Muffin hangat yang disajikan dengan daging ayam asap, telur, dan keju bernutrisi.",
+        "category": "burger"
+    },
+    {
+        "id": 16,
+        "name": "Chicken Muffin with Egg",
+        "price": 33500,
+        "image": "food_images/chicken_muffin_with_egg.png",
+        "description": "Setangkup English Muffin hangat dilapisi dengan saus mayonais, daging ayam olahan yang digoreng sempurna, telur, dan keju.",
+        "category": "burger"
+    },
+    {
+        "id": 17,
+        "name": "Big Mac",
+        "price": 44500,
+        "image": "food_images/burger_big_mac.png",
+        "description": "Burger Ikonik McDonald`s dua lapis daging sapi gurih disajikan dengan saus spesial, selada segar, keju, acar, timun, bawang, diapit roti bertabur wijen.",
+        "category": "burger"
+    },
+    {
+        "id": 18,
+        "name": "Triple Cheeseburger",
+        "price": 63500,
+        "image": "food_images/burger_triple_cheese.png",
+        "description": "Perbaduan roti burger dengan 3 lapisan daging gurih berasal dari 100% daging sapi Australia dan 3 lapis keju, saus tomat, acar, potongan bawang dan mustard.",
+        "category": "burger"
+    },
+    {
+        "id": 19,
+        "name": "Double Cheeseburger",
+        "price": 42000,
+        "image": "food_images/burger_double_cheese.png",
+        "description": "Perbaduan roti burger dengan 2 lapisan daging gurih dan 2 lapisan keju disajikan dengan saus tomat, acar, potongan bawang dan mustard.",
+        "category": "burger"
+    },
+    {
+        "id": 20,
+        "name": "Cheeseburger Deluxe",
+        "price": 35000,
+        "image": "food_images/cheese_deluxe.png",
+        "description": "Perpaduan roti burger dengan daging sapi gurih, selada segar, keju, saus tomat, acar, potongan bawang dan mustard.",
+        "category": "burger"
+    },
+    {
+        "id": 21,
+        "name": "French Fries",
+        "price": 21000,
+        "image": "food_images/french_fries.png",
+        "description": "Kentang goreng renyah dan gurih.",
+        "category": "cemilan"
+    },
+    {
+        "id": 22,
+        "name": "Sweet Corn",
+        "price": 13000,
+        "image": "food_images/sweet_corn.png",
+        "description": "Bulir jagung yang direbus hingga menghasilkan rasa manis yang alami dan bernutrisi.",
+        "category": "cemilan"
+    },
+    {
+        "id": 23,
+        "name": "Cheese Stick",
+        "price": 24500,
+        "image": "food_images/cheese_stick.png",
+        "description": "Empat potong pastry keju renyah yang gurih khas McCafe.",
+        "category": "cemilan"
+    },
+    {
+        "id": 24,
+        "name": "Butter Croissant",
+        "price": 25500,
+        "image": "food_images/croissant_butter.png",
+        "description": "Croissant renyah dan gurih yang disajikan dengan mentega.",
+        "category": "cemilan"
+    },
+    {
+        "id": 25,
+        "name": "Banana Muffin",
+        "price": 26000,
+        "image": "food_images/banana_muffin.png",
+        "description": "Muffin McCafe rasa pisang yang lembut.",
+        "category": "cemilan"
+    },
+    {
+        "id": 26,
+        "name": "Choco Chip Muffin",
+        "price": 26000,
+        "image": "food_images/choco_chip_muffin.png",
+        "description": "Muffin McCafe lembut dengan taburan choco chip.",
+        "category": "cemilan"
+    },
+    {
+        "id": 27,
+        "name": "Cheese Croissant",
+        "price": 35000,
+        "image": "food_images/cheese_croissant.png",
+        "description": "Croissant yang renyah berisikan lelehan keju yang gurih.",
+        "category": "cemilan"
+    },
+    {
+        "id": 28,
+        "name": "Tuna Puff Pastry",
+        "price": 34000,
+        "image": "food_images/tuna_puff.png",
+        "description": "Croissant yang renyah berisikan daging ikan tuna yang gurih.",
+        "category": "cemilan"
+    },
+    {
+        "id": 29,
+        "name": "Choco Lover",
+        "price": 36000,
+        "image": "food_images/choco_lover.png",
+        "description": "Cake favorit McCafe yang cocok bagi Anda pecinta coklat.",
+        "category": "cemilan"
+    },
+    {
+        "id": 30,
+        "name": "Klepon Cake",
+        "price": 36000,
+        "image": "food_images/klepon_cake.png",
+        "description": "Cake pandan dengan baluran gula merah dan taburan serutan kelapa.",
+        "category": "cemilan"
+    },
+    {
+        "id": 31,
+        "name": "Cokelat Strawberry Sundae",
+        "price": 12000,
+        "image": "food_images/cokelat_strawberry_sundae.png",
+        "description": "Soft ice cream McDonald's favorit dengan cita rasa cokelat dengan pilihan topping saus strawberry. Tersedia di restoran McDonald’s tertentu.",
+        "category": "dessert"
+    },
+    {
+        "id": 32,
+        "name": "Chocolate Sundae",
+        "price": 12000,
+        "image": "food_images/coklat_sundae.png",
+        "description": "Es krim vanilla lembut dengan pilihan topping saus coklat.",
+        "category": "dessert"
+    },
+    {
+        "id": 33,
+        "name": "Ice Cream Cone Cokelat Twist",
+        "price": 10000,
+        "image": "food_images/icecream_cone_cokelat_twist.png",
+        "description": "Soft ice cream McDonald's favorit dengan cita rasa vanilla dan cokelat yang disajikan dengan cone renyah. Tersedia di restoran McDonald`s tertentu.",
+        "category": "dessert"
+    },
+    {
+        "id": 34,
+        "name": "McFlurry feat. OREO",
+        "price": 14000,
+        "image": "food_images/mcflurry_oreo.png",
+        "description": "Es krim vanilla lembut dengan campuran OREO Crumbs.",
+        "category": "dessert"
+    },
+    {
+        "id": 35,
+        "name": "McFlurry Choco",
+        "price": 14000,
+        "image": "food_images/mcflurry_choco.png",
+        "description": "Es krim vanilla lembut dengan campuran bubuk coklat.",
+        "category": "dessert"
+    },
+    {
+        "id": 36,
+        "name": "Choco Top",
+        "price": 12000,
+        "image": "food_images/choco_top.png",
+        "description": "Es krim vanilla dilapisi coklat renyah disajikan dengan cone renyah.",
+        "category": "dessert"
+    },
+    {
+        "id": 37,
+        "name": "Strawberry Sundae",
+        "price": 12000,
+        "image": "food_images/strawberry_sundae.png",
+        "description": "Es krim vanilla lembut dengan pilihan topping saus strawberry.",
+        "category": "dessert"
+    },
+    {
+        "id": 38,
+        "name": "Double Choco Sundae",
+        "price": 12000,
+        "image": "food_images/double_choco_sundae.png",
+        "description": "Soft ice cream McDonald's favorit dengan cita rasa cokelat dengan pilihan topping saus cokelat. Tersedia di restoran McDonald’s tertentu.",
+        "category": "dessert"
+    },
+    {
+        "id": 39,
+        "name": "Milk Tea McFlurry with Jelly Ball",
+        "price": 18000,
+        "image": "food_images/milk_tea_Jelly.png",
+        "description": "Nikmatnya soft ice cream vanilla McD dengan cita rasa teh susu favorit dengan topping Jelly Ball.",
+        "category": "dessert"
+    },
+    {
+        "id": 40,
+        "name": "Milk Tea McFlurry with OREO",
+        "price": 18000,
+        "image": "food_images/milk_tea_oreo.png",
+        "description": "Nikmatnya soft ice cream vanilla McD dengan cita rasa teh susu favorit dengan topping OREO.",
+        "category": "dessert"
+    },
+    {
+        "id": 41,
+        "name": "Iced Café Matcha Fushion",
+        "price": 20000,
+        "image": "food_images/kopi_matcha.png",
+        "description": "Teh hijau khas Jepang dengan susu dan espresso, yang terbuat dari 100% biji kopi Arabica disajikan dengan es batu yang menyegarkan.",
+        "category": "minuman"
+    },
+    {
+        "id": 42,
+        "name": "Fruit Tea Lemon",
+        "price": 10000,
+        "image": "food_images/fruit_tea_lemon.png",
+        "description": "Teh rasa buah lemon yang segar.",
+        "category": "minuman"
+    },
+    {
+        "id": 43,
+        "name": "Coca Cola",
+        "price": 10000,
+        "image": "food_images/coca_cola.png",
+        "description": "Minuman berkarbonasi dengan rasa cola.",
+        "category": "minuman"
+    },
+    {
+        "id": 44,
+        "name": "Sprite",
+        "price": 10000,
+        "image": "food_images/sprite.png",
+        "description": "Minuman berkarbonasi dengan rasa perpaduan lemon lime dan soda.",
+        "category": "minuman"
+    },
+    {
+        "id": 45,
+        "name": "Fanta",
+        "price": 10000,
+        "image": "food_images/fanta.png",
+        "description": "Minuman berkarbonasi dengan rasa strawberry.",
+        "category": "minuman"
+    },
+    {
+        "id": 46,
+        "name": "Iced Milo",
+        "price": 20000,
+        "image": "food_images/milo.png",
+        "description": "Minuman Milo dingin.",
+        "category": "minuman"
+    },
+    {
+        "id": 47,
+        "name": "Iced Coffee Tiramisu",
+        "price": 20000,
+        "image": "food_images/iced_coffee_tiramisu.png",
+        "description": "Segarnya perpaduan Iced Coffee favorit McD bercita rasa Tiramisu dengan susu.",
+        "category": "minuman"
+    },
+    {
+        "id": 48,
+        "name": "Iced Coffee Tiramisu Jelly",
+        "price": 23000,
+        "image": "food_images/iced_coffee_tiramisu_jelly.png",
+        "description": "Segarnya perpaduan Iced Coffee favorit McD bercita rasa Tiramisu dengan susu, ditambah topping jelly.",
+        "category": "minuman"
+    },
+    {
+        "id": 49,
+        "name": "Iced Coffee Tiramisu Float",
+        "price": 23000,
+        "image": "food_images/tiramisu_float.png",
+        "description": "Segarnya perpaduan Iced Coffee favorit McD bercita rasa Tiramisu dengan susu, ditambah soft ice cream vanila.",
+        "category": "minuman"
+    },
+    {
+        "id": 50,
+        "name": "Iced Coffee Tiramisu Jelly Float",
+        "price": 28000,
+        "image": "food_images/tiramisu_jelly_float.png",
+        "description": "Segarnya perpaduan Iced Coffee favorit McD bercita rasa Tiramisu dengan susu, ditambah topping jelly dan soft ice cream vanilla.",
+        "category": "minuman"
+    },
+    {
+        "id": 51,
+        "name": "Iced Coffee",
+        "price": 20000,
+        "image": "food_images/iced_coffee.png",
+        "description": "Kesegaran es kopi dari 100% Arabica khas McCafe.",
+        "category": "minuman"
+    },
+    {
+        "id": 52,
+        "name": "Iced Matcha Latte",
+        "price": 23000,
+        "image": "food_images/matcha_latte.png",
+        "description": "Segarnya perpaduan teh hijau khas Jepang dengan susu yang disajikan dingin.",
+        "category": "minuman"
+    },
+    {
+        "id": 53,
+        "name": "Happy Meal Egg & Cheese Muffin",
+        "price": 45000,
+        "image": "food_images/happy_meal_edd_cheese_muffin.png",
+        "description": "Menu seimbang khusus di pagi hari, untuk Si Kecil dengan Egg & Cheese Muffin, Jagung, Susu UHT dan hadiah mainan atau buku.",
+        "category": "paket"
+    },
+    {
+        "id": 54,
+        "name": "Happy Meal 4 pcs McNuggets",
+        "price": 45000,
+        "image": "food_images/happy_meal_4nuggets.png",
+        "description": "Menu seimbang untuk Si Kecil dengan 4 potong Chicken McNugget® gurih, Kentang Goreng renyah ukuran anak, Susu UHT dan hadiah mainan atau buku.",
+        "category": "paket"
+    },
+    {
+        "id": 55,
+        "name": "Happy Meal Ayam McD",
+        "price": 45000,
+        "image": "food_images/happy_meal_ayamMcD.png",
+        "description": "Menu seimbang untuk Si Kecil dengan Ayam goreng McD, Nasi hangat, Susu UHT dan hadiah mainan atau buku.",
+        "category": "paket"
+    },
+    {
+        "id": 56,
+        "name": "Happy Meal Beef Burger",
+        "price": 45000,
+        "image": "food_images/happy_meal_beef_burger.png",
+        "description": "Menu seimbang untuk Si Kecil dengan Beef Burger, Jagung, Susu UHT, dan hadiah mainan atau buku.",
+        "category": "paket"
+    },
+    {
+        "id": 57,
+        "name": "Paket Keluarga Seru dengan Mainan",
+        "price": 94000,
+        "image": "food_images/paket_keluarga_dengan_mainan.png",
+        "description": "Paket favorit keluarga dengan 3 Ayam Krispy McD, 3 Medium Rice, 3 Small Fruit Tea, 2 McFlurry feat. OREO, dan mainan.",
+        "category": "paket"
+    },
+    {
+        "id": 58,
+        "name": "Paket Keluarga Seru Tanpa Mainan",
+        "price": 75000,
+        "image": "food_images/paket_keluarga_tanpa_mainan.png",
+        "description": "Paket favorit keluarga dengan 3 Ayam Krispy McD, 3 Medium Rice, 3 Small Fruit Tea, dan 2 McFlurry feat. OREO.",
+        "category": "paket"
     }
 ]
