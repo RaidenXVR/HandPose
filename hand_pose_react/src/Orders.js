@@ -31,7 +31,7 @@ function OrdersLayer() {
 
     return (<div className='orders' id='orders'>
         <div className="finger-icon up2-icon">
-            <img src="hand_images/gun-finger.png" alt="up"></img>
+            <img src="/hand_images/gun-finger.png" alt="up"></img>
         </div>
         <div className='order-items' id='order-items'>
             {items.map((item, index) => (
@@ -43,7 +43,7 @@ function OrdersLayer() {
                     </div>
                     <div className='add-red-buttons'>
                         <div className="finger-icon less-icon">
-                            <img src="hand_images/gun-finger.png" alt="less"></img>
+                            <img src="/hand_images/gun-finger.png" alt="less"></img>
                         </div>
                         <button className='nav-button more-less-button' onClick={() => reduceAmount(item.id, index)} id='add-amount-button'>-</button>
                         <div className='order-amount'>
@@ -51,7 +51,7 @@ function OrdersLayer() {
                         </div>
                         <button className='nav-button more-less-button' onClick={() => addAmount(item.id, index)}>+</button>
                         <div className="finger-icon more-icon">
-                            <img src="hand_images/gun-finger.png" alt="less"></img>
+                            <img src="/hand_images/gun-finger.png" alt="less"></img>
                         </div>
 
                     </div>
@@ -61,7 +61,7 @@ function OrdersLayer() {
             }
         </div>
         <div className="finger-icon down2-icon">
-            <img src="hand_images/gun-finger.png" alt="down"></img>
+            <img src="/hand_images/gun-finger.png" alt="down"></img>
         </div>
         <div className='total'>
             <h3 id='total-price'>{`Total: Rp. ${totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</h3>
@@ -69,12 +69,12 @@ function OrdersLayer() {
         <div className='order-buttons'>
             <button className="back-button" onClick={() => closeOrders()} id='orders-back'>Back To Menu
                 <div className="finger-icon cancel2-icon">
-                    <img src="hand_images/thumb_down.png" alt="back"></img>
+                    <img src="/hand_images/thumb_down.png" alt="back"></img>
                 </div>
             </button>
             <button className="checkout-button" onClick={toPage2} id='order-checkout'>Checkout
                 <div className="finger-icon checkout-icon">
-                    <img src="hand_images/thumb_up.png" alt="checkout"></img>
+                    <img src="/hand_images/thumb_up.png" alt="checkout"></img>
                 </div>
             </button>
         </div>

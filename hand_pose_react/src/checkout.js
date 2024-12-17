@@ -12,7 +12,7 @@ function Checkout() {
 
             <div className='checkout-item' id='cash' onClick={() => { changeEle() }}>
                 <div className="finger-icon card-icon">
-                    <img src="hand_images/1.png" alt="card"></img>
+                    <img src="/hand_images/1.png" alt="card"></img>
                 </div>
                 <img src='cash.png'></img>
                 <h2>Cash</h2>
@@ -20,14 +20,14 @@ function Checkout() {
             </div>
             <div className='checkout-item' id='card' onClick={() => { changeEle() }}>
                 <div className="finger-icon card-icon">
-                    <img src="hand_images/2.png" alt="card"></img>
+                    <img src="/hand_images/2.png" alt="card"></img>
                 </div>
                 <img src='card.png'></img>
                 <h2>Card</h2>
             </div>
             <button className='back-button back-to-menu' onClick={() => { backToMenu() }} id='checkout-back'>Back to Menu
                 <div className="finger-icon back-to-menu-button">
-                    <img src="hand_images/thumb_down.png" alt="yes"></img>
+                    <img src="/hand_images/thumb_down.png" alt="yes"></img>
                 </div>
             </button>
         </div>)

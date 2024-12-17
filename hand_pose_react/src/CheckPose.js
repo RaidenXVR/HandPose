@@ -26,7 +26,7 @@ function CheckPose() {
 
         const interval = setInterval(() => {
             fetchData();
-        }, 1300); // Adjust the interval as needed
+        }, 2000); // Adjust the interval as needed
 
         // Cleanup interval on component unmount
         return () => clearInterval(interval);
@@ -50,9 +50,14 @@ function checkDoPose(data) {
                     if (confirm) confirm.click();
                     break;
                 case "yes":
-                    const yes = document.getElementById('order-checkout');
-                    yes.click();
-
+                    if (getUiState() === 'menu') {
+                        const viewOrder = document.getElementsByClassName("view-order-button");
+                        if (viewOrder) viewOrder[0].click();
+                    }
+                    else {
+                        const yes = document.getElementById('order-checkout');
+                        yes.click();
+                    }
                     break;
                 case "no":
                     if (getUiState() === 'menu') {
@@ -151,10 +156,7 @@ function checkDoPose(data) {
                         getNext();
                     }
                     break;
-                case "fist":
-                    const viewOrder = document.getElementsByClassName("view-order-button");
-                    if (viewOrder) viewOrder[0].click();
-                    break;
+
             }
         } catch (err) {
             console.error(err.message)

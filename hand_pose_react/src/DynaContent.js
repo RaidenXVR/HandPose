@@ -54,14 +54,14 @@ function DynaCont() {
                 <div className="confirmation" id='confirm' onClick={() => confirmItem(document.getElementById('item-id').textContent)}>
                     <h3>Konfirmasi</h3>
                     <img id='item-image' src="" alt=""></img>
-                    <div className="finger-icon oke-icon"><img src="hand_images/oke.png" alt="Ok"></img></div>
+                    <div className="finger-icon oke-icon"><img src="/hand_images/oke.png" alt="Ok"></img></div>
 
                 </div>
             </div>
             <div className="menu">
                 <button className="nav-button" id="prev" onClick={() => prevPage()}>&lt;
                     <div className="finger-icon prev-icon">
-                        <img src="hand_images/gun-finger.png" alt="next"></img>
+                        <img src="/hand_images/gun-finger.png" alt="next"></img>
                     </div>
                 </button>
 
@@ -71,7 +71,7 @@ function DynaCont() {
 
                         <div className="menu-item" id={item.id} key={item.id} onClick={() => item_clicked(item)}>
                             <div className={`finger-icon icon-${(index % 5) + 1}`} hidden='false'>
-                                <img src={`hand_images/${(index % 5) + 1}.png`} alt={(index % 5) + 1}></img>
+                                <img src={`/hand_images/${(index % 5) + 1}.png`} alt={(index % 5) + 1}></img>
                             </div>
                             <img src={item.image} alt={item.name}></img>
                             <h4>{item.name}</h4>
@@ -82,7 +82,7 @@ function DynaCont() {
                 </div>
                 <button className="nav-button" id="next" onClick={() => nextPage()}>&gt;
                     <div className="finger-icon next-icon">
-                        <img src="hand_images/gun-finger.png" alt="next"></img>
+                        <img src="/hand_images/gun-finger.png" alt="next"></img>
                     </div>
                 </button>
             </div>

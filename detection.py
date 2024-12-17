@@ -1,3 +1,5 @@
+import os
+import sys
 import cv2
 import mediapipe as mp
 import threading
@@ -86,8 +88,9 @@ def _update_landmarks():
 
 
 if __name__ == "__main__":
+    poses_path = os.path.join(os.getcwd(), "poses.json")
     # def start_daemon():
-    with open('poses.json', "r", encoding='utf-8') as p:
+    with open(poses_path, "r", encoding='utf-8') as p:
         poses_json = json.load(p)
 
     poses: list[Pose] = [Pose(pose_item["output"], pose_item["thumb"], pose_item["index"],

@@ -22,9 +22,18 @@ hand_pose_react/npm-debug.log*
 hand_pose_react/yarn-debug.log*
 hand_pose_react/yarn-error.log*
 
+
 #Python
 venv/*
 test.py
+test.*
 server-ex.py
 __pycache__
 .idea
+
+#build
+build
+build_output
+Handpose
+*.spec
+*.zip
