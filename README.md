@@ -8,29 +8,22 @@ Projek ini menunjukkan penggunaan Hand Pose (Pose Jari) sebagai alternatif pengg
 
 ## Getting Started
 
-Sebelum memulai, pastikan NPM dan Python 3.11 terinstall, kemudian install dependencies dengan menjalankan `install.ps1`. Untuk memulai, gunakan `start.ps1`.
+Download HandPose.zip di laman release ([https://github.com/RaidenXVR/HandPose/releases/tag/v1.0.0](https://github.com/RaidenXVR/HandPose/releases/tag/v1.0.0)), kemudian extract folder di dalamnya ke folder lain. Jalankan `server-main.exe` dan buka `http://localhost:8000` di browser. Setelah itu buka `detection.exe` dan tunggu sampai pendeteksi muncul, kemudian program sudah bisa dijalankan.
 
 ### Dependencies
 
-* Python 3.11 (Tested on 3.11.4)
 * Windows 10/11
-* PowerShell 6+
-* npm 10+
 
 ### Installing
 
-* Install NPM (Jika Belum)
-* Install Python 3.11 (Jika Belum)
-* Clone repository ini.
-* Jalankan install.ps1 menggunakan PowerShell (`powershell -ExecutionPolicy ByPass -File ./install.ps1`)
+* Download HandPose.zip di release
+* Extract folder HandPose
 
 ### Executing program
 
-* Buka Terminal PowerShell
-* Buka direktori tempat repository di clone (Menggunakan cd)
-* Ketik `./start.ps1` dan tekan enter.
-* Jika terjadi error ExecutionPolicy, jalankan dengan `powershell -ExecutionPolicy ByPass -File ./start.ps1`
-* Untuk menghentikan Program, buka webcam yang muncul dan tekan `q`, maka program akan berhenti.
+* Buka program `server-main.exe`
+* Buka browser dan masuk ke `http://localhost:8000`
+* Buka program `detection.exe` dan tunggu sampai aplikasi pendeteksi muncul
 
 ## Help
 
@@ -41,7 +34,7 @@ Sebelum memulai, pastikan NPM dan Python 3.11 terinstall, kemudian install depen
 
 ## Version History
 
-* 0.1
+* v1.0.0
     * Initial Release
 
 ## License
